@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Form from './Form'
+import Posts from './Posts'
 import List from './List'
 
 const mapStateToProps = state => {
@@ -13,8 +14,15 @@ const App = ({ error }) => (
     <div className='col-md-4 offset-md-1'>
       <h2>Articles</h2>
       {error ? "FOUND BAD WORD" : null}
-      <Form />
       <List />
+    </div>
+    <div className='col-md-4 offset-md-1'>
+      <h2>Add a new article</h2>
+      <Form />
+    </div>
+    <div className='col-md-4 offset-md-1'>
+      <h2>API posts</h2>
+      <Posts />
     </div>
   </div>
 )
