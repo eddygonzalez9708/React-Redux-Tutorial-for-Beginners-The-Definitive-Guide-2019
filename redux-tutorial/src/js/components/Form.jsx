@@ -45,8 +45,7 @@ class ConnectedForm extends Component {
             className='form-control'
             id='title'
             value={title}
-            onChange={this.handleChange}
-          />
+            onChange={this.handleChange} />
         </div>
         <button
           type='submit'
